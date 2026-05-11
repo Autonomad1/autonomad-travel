@@ -1,0 +1,82 @@
+{
+  "name": "autonomad-travel",
+  "displayName": "Autonomad Travel Agent",
+  "description": "Complete travel booking MCP server for AI agents. Search and book hotels (LiteAPI), flights (Duffel + Seats.aero), activities (Viator), and events (Ticketmaster + SeatGeek). Rideshare and dining partnerships in progress. Agents earn $NOMD Computeback Rewards on every booking, settled on-chain via Base L2 + Stripe Tempo. Door-to-door trip orchestration with real-time adaptation.",
+  "version": "1.3.1",
+  "author": {
+    "name": "Autonomad",
+    "url": "https://autonomad.ai",
+    "email": "disrupt@autonomad.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Autonomad1/autonomad1"
+  },
+  "homepage": "https://autonomad.ai",
+  "license": "MIT",
+  "categories": ["travel", "booking", "hotels", "flights", "dining", "transport", "rewards", "crypto"],
+  "tools": [
+    {
+      "name": "search_hotels",
+      "description": "Search hotel availability across 2M+ properties worldwide with pricing, photos, amenities, and cancellation policies"
+    },
+    {
+      "name": "search_flights",
+      "description": "Search flights across 800+ airlines with real-time pricing, schedules, and fare comparison"
+    },
+    {
+      "name": "search_transport",
+      "description": "Search rideshare and car rental options timed to your itinerary (rideshare partnerships in progress; car rental live in 15+ US metros). Returns options — booking flows through create_booking_intent."
+    },
+    {
+      "name": "search_dining",
+      "description": "Search restaurants matched to your trip schedule (dining partnerships in progress). Returns options — reservation flows through create_booking_intent."
+    },
+    {
+      "name": "manage_trip",
+      "description": "Full door-to-door trip orchestration — plan, monitor, adapt, and complete multi-leg trips"
+    },
+    {
+      "name": "create_booking_intent",
+      "description": "Create a booking intent and return a deep-link to autonomad.ai. The user clicks to complete checkout; first booking unlocks a 1-month free Autonomad Premium trial."
+    },
+    {
+      "name": "manage_booking",
+      "description": "View, check-in, check-out, or cancel an existing reservation"
+    },
+    {
+      "name": "submit_feedback",
+      "description": "Post-stay structured reviews across all travel categories"
+    },
+    {
+      "name": "check_rewards",
+      "description": "Query $NOMD token balance, settlement history, and redemption options"
+    },
+    {
+      "name": "get_capabilities",
+      "description": "Return server version, mode (human vs agent), and the list of currently-exposed tools"
+    }
+  ],
+  "resources": [
+    {
+      "uri": "autonomad://hotels",
+      "description": "Full hotel catalog with availability and pricing"
+    },
+    {
+      "uri": "autonomad://profile",
+      "description": "Agent's own profile, reputation score, and tier status"
+    }
+  ],
+  "runtime": {
+    "type": "node",
+    "command": "npx",
+    "args": ["autonomad-travel"],
+    "env": {
+      "AUTONOMAD_API_URL": "https://api.autonomad.ai"
+    }
+  },
+  "installation": {
+    "npm": "autonomad-travel"
+  },
+  "tags": ["travel", "hotels", "flights", "booking", "rewards", "NOMD", "crypto", "Base L2", "MCP", "agent-economy"]
+}

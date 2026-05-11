@@ -1,0 +1,47 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.autonomad/travel",
+  "description": "AI travel agent — book flights, hotels, activities, and events worldwide via autonomad.ai.",
+  "repository": {
+    "url": "https://github.com/Autonomad1/autonomad1",
+    "source": "github",
+    "subfolder": "packages/mcp-hotel-tools"
+  },
+  "websiteUrl": "https://autonomad.ai",
+  "version": "1.4.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "autonomad-travel",
+      "version": "1.4.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "AUTONOMAD_API_URL",
+          "description": "Autonomad API base URL. Defaults to production.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string",
+          "default": "https://api.autonomad.ai"
+        },
+        {
+          "name": "AUTONOMAD_AGENT_MODE",
+          "description": "Set to 'true' to expose autonomous-agent tools (register_agent, DID-based booking). Default human mode is for Claude/ChatGPT users.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string",
+          "default": "false"
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.autonomad.ai/mcp"
+    }
+  ]
+}

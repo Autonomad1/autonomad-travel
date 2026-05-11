@@ -1,0 +1,65 @@
+{
+  "name": "autonomad-travel",
+  "version": "1.4.0",
+  "mcpName": "ai.autonomad/travel",
+  "description": "MCP server for Claude (and other LLMs) — search live flights, hotels, Viator activities, and Ticketmaster events; return one autonomad.ai deep-link the user clicks to complete the booking with a 1-month Premium trial. Adds the new 'experiences' browse-intent for one-link addons-step landing.",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "autonomad-travel": "dist/server.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "mcp-registry.json"
+  ],
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agent",
+    "travel",
+    "hotels",
+    "flights",
+    "booking",
+    "autonomad",
+    "computeback",
+    "nomd",
+    "claude",
+    "gpt",
+    "rewards",
+    "agent-economy"
+  ],
+  "author": {
+    "name": "Autonomad",
+    "email": "disrupt@autonomad.ai",
+    "url": "https://autonomad.ai"
+  },
+  "license": "MIT",
+  "homepage": "https://autonomad.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Autonomad1/autonomad1.git",
+    "directory": "packages/mcp-hotel-tools"
+  },
+  "bugs": {
+    "url": "https://github.com/Autonomad1/autonomad1/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}

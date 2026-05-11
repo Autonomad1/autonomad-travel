@@ -1,0 +1,51 @@
+# Smithery installer manifest for autonomad-travel.
+#
+# Two install paths exposed:
+#   1. stdio  — `npx -y autonomad-travel` (the v1.3.x npm package). Used by
+#               Claude Desktop, Cursor, Continue, and other MCP clients
+#               that spawn local processes.
+#   2. http   — https://mcp.autonomad.ai/mcp (the Streaming HTTP MCP server
+#               on Railway). Used by Smithery's hosted gateway, Claude.ai
+#               web Custom Connectors, and any browser-based MCP client.
+#
+# Smithery picks the right transport per client capability automatically.
+
+# Hosted (HTTP) transport — Smithery's preferred form for one-click
+# install on Claude.ai web. No local install, no permissions warning.
+startCommand:
+  type: http
+  url: "https://mcp.autonomad.ai/mcp"
+  configSchema:
+    type: object
+    required: []
+    properties:
+      AUTONOMAD_AGENT_MODE:
+        type: string
+        default: "false"
+        enum: ["true", "false"]
+        title: "Autonomous Agent Mode"
+        description: "Set to 'true' to expose autonomous-agent tools (register_agent, manage_trip, manage_booking, etc.). Default 'false' for human-mode (Claude/ChatGPT concierge)."
+
+# Listing metadata.
+displayName: "Autonomad Travel"
+description: |-
+  Book real travel through Claude or ChatGPT — hotels (LiteAPI 2M+),
+  flights (Duffel + 800 airlines), activities (Viator), events
+  (Ticketmaster), restaurants, and ground transport. The first booking
+  unlocks a 1-month free Autonomad Premium trial. Single deep-link can
+  package compound bookings (flight + hotel together) to skip the
+  back-and-forth and resume on autonomad.ai with everything pre-selected.
+homepage: "https://autonomad.ai"
+repository: "https://github.com/Autonomad1/autonomad1"
+license: "MIT"
+keywords:
+  - travel
+  - hotels
+  - flights
+  - activities
+  - events
+  - dining
+  - booking
+  - rewards
+  - claude
+  - chatgpt
