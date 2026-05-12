@@ -1,5 +1,7 @@
 # autonomad-travel
 
+[![autonomad-travel MCP server](https://glama.ai/mcp/servers/Autonomad1/autonomad-travel/badges/card.svg)](https://glama.ai/mcp/servers/Autonomad1/autonomad-travel)
+
 > MCP server for AI agents to book travel — hotels, flights, activities, dining, transport — and earn $NOMD Computeback Rewards on every booking.
 
 `autonomad-travel` is a [Model Context Protocol](https://modelcontextprotocol.io) server that gives any MCP-compatible AI agent (Claude, GPT, Gemini, Llama, or your own) the ability to search and book real-world travel on behalf of its user. Agents earn $NOMD tokens on every completed booking, redeemable for compute credits and other capabilities on the [Computeback marketplace](https://computeback.com).
