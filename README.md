@@ -2,22 +2,28 @@
 
 [![autonomad-travel MCP server](https://glama.ai/mcp/servers/Autonomad1/autonomad-travel/badges/card.svg)](https://glama.ai/mcp/servers/Autonomad1/autonomad-travel)
 
-> **Autonomad is a free travel app for people — and a booking tool for AI agents.** Plan and book real flights, hotels, activities, and events. **Free for human travelers — no subscription.**
+> **Autonomad is a free, social travel platform for people — and a booking tool for AI agents.** Plan and book real flights, hotels, activities, and events — personalized to your taste and shared with fellow travelers. **Free for human travelers — no subscription.**
 
 **Ways travelers use Autonomad (all free):**
 
-- 📱 **iPhone app** — Apple App Store (currently in beta via TestFlight)
-- 🤖 **Android app** — Google Play (currently in beta)
+- 📱 **iPhone app** — Apple App Store
+- 🤖 **Android app** — Google Play
 - 🌐 **Web app** — [autonomad.ai](https://autonomad.ai), installable as a PWA
 - 💬 **Connector inside Claude and ChatGPT** — this MCP server, hosted at `mcp.autonomad.ai/mcp`
-- 🕶️ **Meta Ray-Ban smart glasses** — look at a place, hear trip ideas (beta)
+- 🕶️ **Meta Ray-Ban smart glasses** — look at any place and instantly pull up nearby hotels, experiences, and events to book, ranked by distance
 
-You don't need to be a developer or run anything — most travelers just ask Claude (or open the app) to plan a trip. A person and an autonomous AI agent both hit the **same live travel inventory**.
+**Personalized by your Travel DNA.** Connect your social handles (Instagram, Spotify, LinkedIn, and more) and Autonomad reads the **public data points** from those accounts to learn your taste and plan trips around what you actually love: your music, the places you follow, the way you like to travel. Linking accounts is optional and only public signals are used.
+
+**It's a social platform, not just a booking tool.** After you book, Autonomad drops you into destination **lounges** with other travelers heading to the same place around the same dates — swap tips, meet up, match with people who share your vibe, and turn every trip into a shared experience.
+
+**Group Trip Democracy.** Planning with friends? Start a group trip and Autonomad blends everyone's Travel DNA, generates a slate of destination options, and lets the group vote (ranked-choice — 1st, 2nd, 3rd). Your agent narrates the winning pick, auto-builds the itinerary, and each member authorizes their own share at checkout — so no one has to front the whole bill. Free for every member.
+
+You don't need to be a developer or run anything — most travelers just ask Claude (or open the app) to plan a trip. A person and an autonomous AI agent both hit the **same live travel inventory** and the same personalization.
 
 `autonomad-travel` is the [Model Context Protocol](https://modelcontextprotocol.io) server behind the Claude/ChatGPT connector. It serves two kinds of users:
 
-- **For travelers (free):** describe the trip in plain language and it searches live flights, hotels, [Viator](https://www.viator.com) experiences, and [Ticketmaster](https://www.ticketmaster.com) events, then hands back a one-tap link to book the real trip. No subscription required.
-- **For AI agents:** it's the same booking tool any MCP-compatible agent (Claude, GPT, Gemini, Llama, or your own) can call to search and book on behalf of its user. Agents additionally earn `$NOMD` [Computeback Rewards](https://computeback.com) on every completed booking, redeemable for compute credits and other capabilities.
+- **For travelers (free):** describe the trip in plain language and it searches live flights, hotels, [Viator](https://www.viator.com) experiences, and [Ticketmaster](https://www.ticketmaster.com) events — tuned to your Travel DNA — then hands back a one-tap link to book the real trip. No subscription required.
+- **For AI agents:** it's the same booking tool any MCP-compatible agent (Claude, GPT, Gemini, Llama, or your own) can call to search and book on behalf of its user, against the same live inventory. Agents additionally earn `$NOMD` [Computeback Rewards](https://computeback.com) on every completed booking.
 
 ## Quick start
 

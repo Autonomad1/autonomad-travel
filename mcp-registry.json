@@ -1,7 +1,7 @@
 {
   "name": "autonomad-travel",
   "displayName": "Autonomad Travel Agent",
-  "description": "Free travel booking for people and AI agents. Plan and book real hotels (LiteAPI), flights (Duffel + Seats.aero), activities (Viator), and events (Ticketmaster + SeatGeek). Travelers use it free on iOS, Android, the web app, and as a connector inside Claude and ChatGPT \u2014 no subscription. AI agents can also book autonomously and earn $NOMD Computeback Rewards, settled on-chain via Base L2. Door-to-door trip orchestration with real-time adaptation.",
+  "description": "Free, social travel platform for people and AI agents. Plan & book real hotels (LiteAPI), flights (Duffel + Seats.aero), activities (Viator), and events (Ticketmaster + SeatGeek), personalized to your Travel DNA \u2014 connect your social handles and Autonomad uses the public data points to tailor every trip. Group Trip Democracy lets friends vote on the destination; destination lounges connect travelers on the ground. Free for travelers on iOS, Android, web, and as a Claude/ChatGPT connector \u2014 no subscription. AI agents can also book autonomously and earn $NOMD Computeback Rewards, settled on-chain via Base L2.",
   "version": "1.3.1",
   "author": {
     "name": "Autonomad",

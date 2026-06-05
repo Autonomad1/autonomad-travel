@@ -29,14 +29,16 @@ startCommand:
 # Listing metadata.
 displayName: "Autonomad Travel"
 description: |-
-  Free travel for people — and a booking tool for AI agents. Plan and book
-  real hotels (LiteAPI 2M+), flights (Duffel + 800 airlines), activities
-  (Viator), events (Ticketmaster), restaurants, and ground transport. Free
-  for human travelers, who can also use the iOS / Android apps and the
-  autonomad.ai web app — no subscription. A single deep-link can package
-  compound bookings (flight + hotel together) and resume on autonomad.ai
-  with everything pre-selected. AI agents can additionally book
-  autonomously and earn $NOMD rewards.
+  Free, social travel platform for people — and a booking tool for AI
+  agents. Plan and book real hotels (LiteAPI 2M+), flights (Duffel + 800
+  airlines), activities (Viator), events (Ticketmaster), restaurants, and
+  ground transport, personalized to your Travel DNA — connect your social
+  handles and Autonomad uses the public data points to tailor every trip.
+  Plan with friends via Group Trip Democracy (everyone votes on the
+  destination), then meet fellow travelers in destination lounges. Free for
+  human travelers on the iOS / Android apps, the autonomad.ai web app, and
+  the Claude / ChatGPT connector — no subscription. AI agents can
+  additionally book autonomously and earn $NOMD rewards.
 homepage: "https://autonomad.ai"
 repository: "https://github.com/Autonomad1/autonomad1"
 license: "MIT"
