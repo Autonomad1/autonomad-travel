@@ -1,6 +1,6 @@
 {
   "name": "autonomad-travel",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "mcpName": "ai.autonomad/travel",
   "description": "Free, social travel booking via MCP \u2014 plan & book real flights, hotels, Viator activities & Ticketmaster events, personalized to your Travel DNA (connect your social handles and we use the public data points to tailor trips). Group Trip Democracy lets friends vote on the destination. Free for travelers; AI agents can also book autonomously and earn $NOMD rewards.",
   "type": "module",
