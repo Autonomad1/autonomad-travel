@@ -1,7 +1,7 @@
 {
   "name": "autonomad-travel",
   "displayName": "Autonomad Travel Agent",
-  "description": "Complete travel booking MCP server for AI agents. Search and book hotels (LiteAPI), flights (Duffel + Seats.aero), activities (Viator), and events (Ticketmaster + SeatGeek). Rideshare and dining partnerships in progress. Agents earn $NOMD Computeback Rewards on every booking, settled on-chain via Base L2 + Stripe Tempo. Door-to-door trip orchestration with real-time adaptation.",
+  "description": "Free travel booking for people and AI agents. Plan and book real hotels (LiteAPI), flights (Duffel + Seats.aero), activities (Viator), and events (Ticketmaster + SeatGeek). Travelers use it free on iOS, Android, the web app, and as a connector inside Claude and ChatGPT \u2014 no subscription. AI agents can also book autonomously and earn $NOMD Computeback Rewards, settled on-chain via Base L2. Door-to-door trip orchestration with real-time adaptation.",
   "version": "1.3.1",
   "author": {
     "name": "Autonomad",
@@ -14,7 +14,16 @@
   },
   "homepage": "https://autonomad.ai",
   "license": "MIT",
-  "categories": ["travel", "booking", "hotels", "flights", "dining", "transport", "rewards", "crypto"],
+  "categories": [
+    "travel",
+    "booking",
+    "hotels",
+    "flights",
+    "dining",
+    "transport",
+    "rewards",
+    "crypto"
+  ],
   "tools": [
     {
       "name": "search_hotels",
@@ -26,15 +35,15 @@
     },
     {
       "name": "search_transport",
-      "description": "Search rideshare and car rental options timed to your itinerary (rideshare partnerships in progress; car rental live in 15+ US metros). Returns options — booking flows through create_booking_intent."
+      "description": "Search rideshare and car rental options timed to your itinerary (rideshare partnerships in progress; car rental live in 15+ US metros). Returns options \u2014 booking flows through create_booking_intent."
     },
     {
       "name": "search_dining",
-      "description": "Search restaurants matched to your trip schedule (dining partnerships in progress). Returns options — reservation flows through create_booking_intent."
+      "description": "Search restaurants matched to your trip schedule (dining partnerships in progress). Returns options \u2014 reservation flows through create_booking_intent."
     },
     {
       "name": "manage_trip",
-      "description": "Full door-to-door trip orchestration — plan, monitor, adapt, and complete multi-leg trips"
+      "description": "Full door-to-door trip orchestration \u2014 plan, monitor, adapt, and complete multi-leg trips"
     },
     {
       "name": "create_booking_intent",
@@ -70,7 +79,9 @@
   "runtime": {
     "type": "node",
     "command": "npx",
-    "args": ["autonomad-travel"],
+    "args": [
+      "autonomad-travel"
+    ],
     "env": {
       "AUTONOMAD_API_URL": "https://api.autonomad.ai"
     }
@@ -78,5 +89,16 @@
   "installation": {
     "npm": "autonomad-travel"
   },
-  "tags": ["travel", "hotels", "flights", "booking", "rewards", "NOMD", "crypto", "Base L2", "MCP", "agent-economy"]
+  "tags": [
+    "travel",
+    "hotels",
+    "flights",
+    "booking",
+    "rewards",
+    "NOMD",
+    "crypto",
+    "Base L2",
+    "MCP",
+    "agent-economy"
+  ]
 }

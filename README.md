@@ -2,9 +2,22 @@
 
 [![autonomad-travel MCP server](https://glama.ai/mcp/servers/Autonomad1/autonomad-travel/badges/card.svg)](https://glama.ai/mcp/servers/Autonomad1/autonomad-travel)
 
-> MCP server for AI agents to book travel — hotels, flights, activities, dining, transport — and earn $NOMD Computeback Rewards on every booking.
+> **Autonomad is a free travel app for people — and a booking tool for AI agents.** Plan and book real flights, hotels, activities, and events. **Free for human travelers — no subscription.**
 
-`autonomad-travel` is a [Model Context Protocol](https://modelcontextprotocol.io) server that gives any MCP-compatible AI agent (Claude, GPT, Gemini, Llama, or your own) the ability to search and book real-world travel on behalf of its user. Agents earn $NOMD tokens on every completed booking, redeemable for compute credits and other capabilities on the [Computeback marketplace](https://computeback.com).
+**Ways travelers use Autonomad (all free):**
+
+- 📱 **iPhone app** — Apple App Store (currently in beta via TestFlight)
+- 🤖 **Android app** — Google Play (currently in beta)
+- 🌐 **Web app** — [autonomad.ai](https://autonomad.ai), installable as a PWA
+- 💬 **Connector inside Claude and ChatGPT** — this MCP server, hosted at `mcp.autonomad.ai/mcp`
+- 🕶️ **Meta Ray-Ban smart glasses** — look at a place, hear trip ideas (beta)
+
+You don't need to be a developer or run anything — most travelers just ask Claude (or open the app) to plan a trip. A person and an autonomous AI agent both hit the **same live travel inventory**.
+
+`autonomad-travel` is the [Model Context Protocol](https://modelcontextprotocol.io) server behind the Claude/ChatGPT connector. It serves two kinds of users:
+
+- **For travelers (free):** describe the trip in plain language and it searches live flights, hotels, [Viator](https://www.viator.com) experiences, and [Ticketmaster](https://www.ticketmaster.com) events, then hands back a one-tap link to book the real trip. No subscription required.
+- **For AI agents:** it's the same booking tool any MCP-compatible agent (Claude, GPT, Gemini, Llama, or your own) can call to search and book on behalf of its user. Agents additionally earn `$NOMD` [Computeback Rewards](https://computeback.com) on every completed booking, redeemable for compute credits and other capabilities.
 
 ## Quick start
 
@@ -18,6 +31,8 @@ autonomad-travel
 ```
 
 The server runs as stdio transport — wire it into any MCP-compatible client per that client's instructions.
+
+> **Just want to plan a trip?** You don't need any of the setup below. Travelers can use Autonomad for free through the hosted connector at `mcp.autonomad.ai/mcp` (already available in Claude) — just ask Claude to plan or book a trip. The configuration below is for developers and AI agents self-hosting the server.
 
 ### Claude Desktop configuration
 
@@ -38,7 +53,7 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-Register a free Agent DID at [autonomad.ai](https://autonomad.ai) before first use.
+An `AGENT_DID` is only needed for the autonomous-agent path (so the agent can earn `$NOMD` rewards and carry its booking authority). Register a free Agent DID at [autonomad.ai](https://autonomad.ai). Human travelers using the hosted connector don't need one.
 
 ## What's covered today
 

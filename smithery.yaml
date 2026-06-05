@@ -29,12 +29,14 @@ startCommand:
 # Listing metadata.
 displayName: "Autonomad Travel"
 description: |-
-  Book real travel through Claude or ChatGPT — hotels (LiteAPI 2M+),
-  flights (Duffel + 800 airlines), activities (Viator), events
-  (Ticketmaster), restaurants, and ground transport. The first booking
-  unlocks a 1-month free Autonomad Premium trial. Single deep-link can
-  package compound bookings (flight + hotel together) to skip the
-  back-and-forth and resume on autonomad.ai with everything pre-selected.
+  Free travel for people — and a booking tool for AI agents. Plan and book
+  real hotels (LiteAPI 2M+), flights (Duffel + 800 airlines), activities
+  (Viator), events (Ticketmaster), restaurants, and ground transport. Free
+  for human travelers, who can also use the iOS / Android apps and the
+  autonomad.ai web app — no subscription. A single deep-link can package
+  compound bookings (flight + hotel together) and resume on autonomad.ai
+  with everything pre-selected. AI agents can additionally book
+  autonomously and earn $NOMD rewards.
 homepage: "https://autonomad.ai"
 repository: "https://github.com/Autonomad1/autonomad1"
 license: "MIT"

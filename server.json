@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.autonomad/travel",
-  "description": "AI travel agent — book flights, hotels, activities, and events worldwide via autonomad.ai.",
+  "description": "Free travel app for people \u2014 and a booking tool for AI agents. Book flights, hotels, activities, and events worldwide via Claude, ChatGPT, the iOS/Android apps, or autonomad.ai.",
   "repository": {
     "url": "https://github.com/Autonomad1/autonomad1",
     "source": "github",
